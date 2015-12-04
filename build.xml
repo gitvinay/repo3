@@ -3,7 +3,7 @@
 <mkdir dir="/build/class"/>
 </target>
 <target name="compile" depends="makedir">
-<javac srcdir="/src" destdir="/build/class"/>
+<javac srcdir="./src" destdir="/build/class"/>
 </target>
 <target name="jar" depends="compile">
 <jar destdir="/build/jar src=/build/class"/>
