@@ -17,10 +17,10 @@ public class ArrayExamples {
     public static void main(String[] args) {
 
         //Array of strings
-        String []myArray = {"Ace","King","Queen","Jack"};
+        String []myArray = {"Ace","King","Queen","Jack"}
 
         //print the array
-        System.out.println("Orginal Array");
+        System.out.println("Orginal Array")
         printArray(myArray);
 
         //Sort the array using Arrays static class
