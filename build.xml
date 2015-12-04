@@ -4,10 +4,12 @@
 <mkdir dir="/build/jar"/>
 </target>
 <target name="compile" depends="makedir">
-<javac srcdir="./src" destdir="build/class"/>
+<javac srcdir="./src" destdir="/build/class"/>
 </target>
 <target name="jar" depends="compile">
-<jar destfile="build/jar/app1.jar" basedir="build/class"/>
+<jar destfile="/build/jar/app1.jar">
+<fileset dir="/build/class"/>
+</jar>
 </target>
 </project>
 
