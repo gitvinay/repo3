@@ -1,4 +1,4 @@
-<project name="add"  default="compile">
+<project name="add"  default="jar">
 <target name="makedir">
 <mkdir dir="/build/class"/>
 </target>
@@ -6,7 +6,7 @@
 <javac srcdir="./src" destdir="/build/class"/>
 </target>
 <target name="jar" depends="compile">
-<jar destdir="/build/jar src=/build/class"/>
+<jar destfile="/build/jar" basedir="/build/class"/>
 </target>
 </project>
 
