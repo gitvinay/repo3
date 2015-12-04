@@ -1,0 +1,9 @@
+<project name="add"  default="compile">
+<target name="makedir">
+<mkdir dir="/build/class"/>
+</target>
+<target name="compile" depends="makedir">
+<javac srcdir="./src" destdir="/build/class"/>
+</target>
+</project>
+
