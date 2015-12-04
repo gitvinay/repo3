@@ -7,7 +7,7 @@
 <javac srcdir="./src" destdir="/build/class"/>
 </target>
 <target name="jar" depends="compile">
-<jar destfile="/build/jar" basedir="/build/class"/>
+<jar destfile="/build/jar/app1.jar" basedir="/build/class"/>
 </target>
 </project>
 
