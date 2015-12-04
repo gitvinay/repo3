@@ -8,7 +8,7 @@
 </target>
 <target name="jar" depends="compile">
 <jar destfile="/build/jar/app1.jar">
-<fileset dir="/build/class"/>
+<fileset dir="./build/class"/>
 </jar>
 </target>
 </project>
